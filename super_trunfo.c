@@ -114,10 +114,11 @@ void compararCartas(struct cartaEstadoCidade carta1, struct cartaEstadoCidade ca
     resultado = (carta1.pib_per_capita > carta2.pib_per_capita);
     printf("PIB per Capita: %d - %s\n", resultado, resultado ? "Carta 1 venceu" : (carta1.pib_per_capita < carta2.pib_per_capita ? "Carta 2 venceu" : "Empate"));
 
+    //FEITA A COMPARAÇÃO DO SUPER PODER EM IF / ELSE IF / ELSE
 
     if (carta1.super_poder > carta2.super_poder) {
         printf("A carta 1 (%s - %s) é mais forte com super poder de %llu.\n", 
-               carta1.estado, carta1.nome_cidade, carta1.super_poder);
+               carta1.estado, carta1.nome_cidade, carta1.super_poder); // Para mostrar na tela o nome do estado, cidade e os pontos totais do super poder.
     } else if (carta1.super_poder < carta2.super_poder) {
         printf("A carta 2 (%s - %s) é mais forte com super poder de %llu.\n", 
                carta2.estado, carta2.nome_cidade, carta2.super_poder);
